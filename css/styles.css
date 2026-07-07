@@ -1,5 +1,9 @@
+/* =========================
+   RESET Y CONFIGURACIÓN
+========================= */
+
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -7,6 +11,10 @@
 html {
   font-size: 62.5%;
 }
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
 
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -16,13 +24,13 @@ body {
 
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* height: 100vh; */
+  min-height: 100vh;
 
   overflow-x: hidden;
 }
 
 main {
-  width: min(90%, 1200px); /* width: 80%;*/
+  width: min(90%, 1200px);
   margin: auto;
   padding-bottom: 2rem;
 
@@ -37,7 +45,6 @@ h1 {
   font-size: 3rem;
   font-weight: 800;
   line-height: 1.15;
-
   margin: 3rem 0;
 }
 
@@ -50,22 +57,52 @@ h2 {
   margin: 3rem 0;
 }
 
+/* =========================
+   UTILIDADES
+========================= */
+
+.text-light {
+  color: #ffffff;
+}
+
+.text-secondary {
+  color: #065964;
+}
+
+.bg-primary {
+  background-color: #00c4df;
+}
+
+.bg-secondary {
+  background-color: #00c4df;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
 .btn {
   border: none;
   font-size: 1.6rem;
   font-weight: bold;
   padding: 1.6rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
-header,
-footer {
+/* =========================
+   HEADER
+========================= */
+
+header {
   background-color: #000000;
   color: #ffffff;
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 1.6rem;
 }
 
@@ -78,19 +115,41 @@ footer {
   color: inherit;
 }
 
-.header-nav ul li a {
-  text-decoration: none;
-  font-size: 2rem;
-  color: inherit;
-  display: inline-block;
-  padding: 2rem;
-}
-
 .header-nav {
   margin-right: 2rem;
 }
 
-.header-nav ul,
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color: inherit;
+
+  font-size: 2rem;
+  display: inline-block;
+  padding: 2rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.6rem;
+}
+
 .footer-list {
   list-style: none;
   display: flex;
@@ -106,31 +165,48 @@ footer {
   padding: 0.5rem;
 }
 
-.bg-primary {
-  background-color: #00c4df;
-}
+/* =========================
+   HOME
+========================= */
 
-.bg-secondary {
-  background-color: #00c4df;
-}
-
-.text-light {
-  color: #ffffff;
-}
-
-.text-secondary {
-  color: #065964;
-}
-
-.parrafo {
-  width: 80%;
+.titulo-home {
   text-align: center;
-  font-size: 2rem;
-  padding: 3rem;
+  font-size: 4rem;
 }
+
+.main-description {
+  text-align: center;
+  max-width: 80rem;
+  margin: 1rem auto;
+
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.main-description:first-of-type {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 1000px;
+
+  border-radius: 1rem;
+  margin: 4rem 0 2rem;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* =========================
+   TARJETAS DE PRODUCTOS
+========================= */
 
 .contenedor-tarjetas {
   margin-top: 2rem;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -139,15 +215,21 @@ footer {
 
 .card {
   background-color: #000000;
+  color: #ffffff;
+
   width: 20rem;
-  border-radius: 1rem;
   padding: 1rem;
+  border-radius: 1rem;
+
   overflow: hidden;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+
   gap: 1rem;
+
   box-shadow:
     rgba(0, 0, 0, 0.19) 0px 10px 20px,
     rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -158,6 +240,233 @@ footer {
   height: 20rem;
   object-fit: cover;
 }
+
+/* =========================
+   NOSOTROS
+========================= */
+
+.nosotros-section {
+  max-width: 90rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin-bottom: 4rem;
+}
+
+.nosotros-section p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.intro-text {
+  font-weight: bold;
+}
+
+.subtitle-text {
+  color: #06717f;
+
+  font-size: 1.8rem;
+  font-weight: bold;
+
+  margin-top: 2rem;
+}
+
+.brand-text {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #06717f;
+
+  margin-top: 2rem;
+}
+
+/* =========================
+   BLOQUES CALIDAD
+========================= */
+
+.bloque-calidad {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  margin: 2rem 0;
+}
+
+.bloque-calidad img {
+  width: 45%;
+  border-radius: 1rem;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.destacado-section {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.producto-destacado {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #06717f;
+  margin-bottom: 1rem;
+}
+
+.producto-descripcion {
+  max-width: 70rem;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+
+.video-destacado {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 1rem;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact-form {
+  background-color: #000000;
+  color: #ffffff;
+
+  width: 100%;
+  max-width: 50rem;
+
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 10rem;
+}
+
+/* =========================
+   CARRITO
+========================= */
+
+.carrito-icono {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+#contador-carrito {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.mensaje-carrito-vacio {
+  text-align: center;
+  font-size: 2.5rem;
+
+  margin-top: 2rem;
+}
+
+#resumen-carrito {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.resumen-card {
+  background-color: white;
+  width: 100%;
+  max-width: 700px;
+
+  padding: 3rem;
+  border-radius: 1rem;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.resumen-card h2 {
+  margin-top: 0;
+}
+
+.resumen-card h3 {
+  margin-top: 2rem;
+  color: #06717f;
+  font-size: 2.2rem;
+}
+
+.fila-producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.total-compra {
+  text-align: right;
+  color: #06717f;
+  font-size: 2.4rem;
+}
+
+.btn-comprar {
+  width: 100%;
+
+  background-color: #000000;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 1rem;
+
+  padding: 1.8rem;
+  font-size: 2rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.btn-comprar:hover {
+  transform: scale(1.02);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media (max-width: 600px) {
   header,
@@ -187,64 +496,13 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
-}
 
-.contact-form {
-  background-color: #000000;
-  color: #ffffff;
-  width: 100%;
-  max-width: 50rem;
-  font-size: 2rem;
-  padding: 3rem;
-  border-radius: 1rem;
+  .bloque-calidad {
+    flex-direction: column;
+    text-align: center;
+  }
 
-  box-shadow:
-    rgba(0, 0, 0, 0.19) 0px 10px 20px,
-    rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 10rem;
-}
-
-.nosotros-section {
-  max-width: 90rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 4rem;
-}
-
-.nosotros-section p {
-  line-height: 1.6;
-  font-size: 2rem;
-}
-
-.intro-text {
-  font-weight: bold;
-  color: #000000;
-}
-
-.question-text {
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-align: left;
-  margin: 2rem 0;
-  color: #06717f;
-}
-
-.brand-message {
-  text-align: center;
-  font-size: 2.4rem;
-  font-weight: bold;
-  color: #06717f;
-  margin-top: 2rem;
+  .bloque-calidad img {
+    width: 100%;
+  }
 }

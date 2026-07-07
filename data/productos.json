@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "nombre": "Linux",
+    "precio": 15000,
+    "img": "img/remera-preventa.png"
+  },
+
+  {
+    "id": "2",
+    "nombre": "Dark Mode",
+    "precio": 25000,
+    "img": "img/remera-negra-1.png"
+  },
+
+  {
+    "id": "3",
+    "nombre": "GitHub",
+    "precio": 25000,
+    "img": "img/remera-azul-1.png"
+  },
+
+  {
+    "id": "4",
+    "nombre": "Front-End",
+    "precio": 25000,
+    "img": "img/remera-ranglan-bn-1.png"
+  },
+
+  {
+    "id": "5",
+    "nombre": "Blue Screen",
+    "precio": 40000,
+    "img": "img/buzo-azul-1.png"
+  },
+
+  {
+    "id": "6",
+    "nombre": "Bug Hunter",
+    "precio": 40000,
+    "img": "img/buzo-rojo-1.png"
+  },
+
+  {
+    "id": "7",
+    "nombre": "Developer",
+    "precio": 10000,
+    "img": "img/piluso-negro-1.png"
+  }
+]

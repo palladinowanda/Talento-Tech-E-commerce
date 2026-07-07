@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
+
   <body>
     <header>
       <div class="div-logo">
@@ -39,30 +40,12 @@
     </header>
 
     <main>
-      <section class="destacado-section">
-        <h2>🚀 Lanzamiento exclusivo CTRL+WEAR</h2>
-        <p class="producto-descripcion">
-          Conocé nuestro producto más nuevo y adquirílo antes que nadie. ¡No te
-          pierdas esta oportunidad de estar a la vanguardia de la moda
-          tecnológica!
-        </p>
+      <h1>Carrito de compras</h1>
+      <section id="contenedor-carrito" class="contenedor-tarjetas"></section>
 
-        <video class="video-destacado" controls>
-          <source src="../video.mp4" type="video/mp4" />
-          Tu navegador no soporta video.
-        </video>
-      </section>
+      <div id="acciones-carrito" class="acciones-carrito"></div>
 
-      <section>
-        <h2 class="titulo-productos text-secondary">Nuestros productos</h2>
-        <p class="producto-descripcion">
-          Descubrí nuestras prendas inspiradas en el mundo de la tecnología, el
-          desarrollo de software y la cultura geek. Diseños únicos para quienes
-          viven entre código, café y pantallas.
-        </p>
-
-        <div id="contenedor-tarjetas" class="contenedor-tarjetas"></div>
-      </section>
+      <section id="resumen-carrito"></section>
     </main>
 
     <footer>
@@ -78,6 +61,6 @@
       </nav>
     </footer>
 
-    <script type="module" src="../js/productos.js"></script>
+    <script type="module" src="../js/carrito.js"></script>
   </body>
 </html>

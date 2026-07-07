@@ -25,6 +25,16 @@
           <li><a href="./pages/nosotros.html">Nosotros</a></li>
           <li><a href="./pages/productos.html">Productos</a></li>
           <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li>
+            <a href="./pages/carrito.html" class="carrito-icono">
+              <img
+                src="./img/carrito.png"
+                alt="Carrito de compras"
+                width="30"
+              />
+              <span id="contador-carrito">0</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -37,59 +47,17 @@
         quienes viven entre código, café y pantallas.
       </p>
 
-      <section>
-        <h2 class="titulo-productos text-secondary">Nuestros productos</h2>
-        <div class="contenedor-tarjetas">
-          <article class="card text-light">
-            <img src="./img/remera-negra-1.png" alt="Remera negra Dark mode" />
-            <h3>Dark Mode</h3>
-            <p>Con esta remera alejás los bugs</p>
-            <p>Precio: $25.000</p>
-            <button class="btn bg-secondary text-light">Comprar</button>
-          </article>
+      <img
+        class="banner-image"
+        src="./img/inicio.png"
+        alt="Banner principal CTRL+WEAR"
+      />
 
-          <article class="card text-light">
-            <img src="./img/remera-azul-1.png" alt="Remera azul GitHub" />
-            <h3>GitHub</h3>
-            <p>Codeá como un profesional</p>
-            <p>Precio: $25.000</p>
-            <button class="btn bg-secondary text-light">Comprar</button>
-          </article>
-
-          <article class="card text-light">
-            <img
-              src="./img/remera-ranglan-bn-1.png"
-              alt="Remera Ranglan FrontEnd"
-            />
-            <h3>Front End</h3>
-            <p>Para quienes convierten ideas en interfaces increíbles</p>
-            <p>Precio: $25.000</p>
-            <button class="btn bg-secondary text-light">Comprar</button>
-          </article>
-
-          <article class="card text-light">
-            <img src="./img/buzo-azul-1.png" alt="Buzo azul Blue Screen" />
-            <h3>Blue Screen</h3>
-            <p>La favorita de quienes enfrentan errores</p>
-            <p>Precio: $40.000</p>
-            <button class="btn bg-secondary text-light">Comprar</button>
-          </article>
-
-          <article class="card text-light">
-            <img src="./img/buzo-rojo-1.png" alt="Buzo rojo Bug Hunter" />
-            <h3>Bug Hunter</h3>
-            <p>Caza bugs con estilo</p>
-            <p>Precio: $40.000</p>
-            <button class="btn bg-secondary text-light">Comprar</button>
-          </article>
-
-          <article class="card text-light">
-            <img src="./img/piluso-negro-1.png" alt="Piluso negro Developer" />
-            <h3>Developer</h3>
-            <p>Construí el futuro con onda</p>
-            <p>Precio: $10.000</p>
-            <button class="btn bg-secondary text-light">Comprar</button>
-          </article>
+      <section class="beneficios">
+        <div>
+          <h3>
+            🚚 Envíos a todo el país - 💳 Pagos seguros - 👕 Diseños exclusivos
+          </h3>
         </div>
       </section>
     </main>
@@ -106,5 +74,7 @@
         </ul>
       </nav>
     </footer>
+
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
